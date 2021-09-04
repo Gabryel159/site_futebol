@@ -1,0 +1,108 @@
+<HTML>
+
+	<HEAD>
+<meta charset="UTF-8"/> 
+		<TITLE> Formulario </TITLE>
+			<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+				<link rel="stylesheet" type="text/css" href="formulario.css">
+				
+				
+	</HEAD>
+	
+		<script>
+		function validar()		{
+		var nome = formuser.usuario_nome.value;
+		var idade = formuser.usuario_email.value;
+		var cpf = formuser.senha_do_usuario.value;
+		
+		
+		if (nome ==""){
+		   alert('Por favor, Preencha o Campo Nome do Agente!');
+       formuser.nome.focus();
+			 return false;
+			 }		
+		if (idade ==""){
+		   alert('Por favor, Preencha o Campo País!');
+       formuser.usuario_email.focus();
+			 return false;
+			 }		
+		if (cpf ==""){
+		   alert('Por favor, Preencha o Campo Codigo Agente FIFA!');
+       formuser.senha_do_usuario.focus();
+			 return false;
+			 }			 
+		if (nome !=""){
+		   alert('Cadastro Efetuado, Desconto de 5% em jogadores!');
+       formuser.nome.focus();
+			 return true;
+			 }		
+		if (idade !=""){
+		   alert('Cadastro Efetuado, Desconto de 5% em jogadores!');
+       formuser.usuario_email.focus();
+			 return true;
+			 }		
+		if (cpf !=""){
+		   alert('Cadastro Efetuado, Desconto de 5% em jogadores!');
+       formuser.senha_do_usuario.focus();
+			 return true;
+			 }	
+			
+		}
+		</script>
+	
+	<body>	
+		<form name="formuser"  form action="formulario.html" method="post" onsubmit="return validacao();">
+		
+    <div>
+        <label for="nome">Nome do Agente:</label>
+        <input type="text" id="nome" name="usuario_nome"  />
+    </div>
+	
+    <div>
+        <label for="email">País:</label>
+        <input type="text" id="email" name="usuario_email"  />
+    </div>
+	
+	<div>
+		 <label for="email">Codigo Agente FIFA:</label>
+		<input type="text" name="senha_do_usuario" /> 
+	</div>
+	
+	<div>
+			Qual Posição Busca Jogadores? <br /> 
+      <input type="checkbox" name="uva" value="uva"/>Goleiro <br /> 
+      <input type="checkbox" name="maca" value="maca"/>Zagueiro  <br /> 
+      <input type="checkbox" name="melancia" value="melancia"/>Lateral <br />
+	<input type="checkbox" name="melancia" value="melancia"/>Volante <br />
+	<input type="checkbox" name="melancia" value="melancia"/>Meio-campo <br />
+	<input type="checkbox" name="melancia" value="melancia"/>Atacante<br />
+	  </div>
+	  
+	  <div>
+		Qual o Objetivo de Negociação?<br /> 
+      <input type="radio" name="carro" value="sim"/>Transferência <br /> 
+      <input type="radio" name="carro" value="nao"/>Emprestimo 
+
+	   </div>
+       	
+    <div>
+        <label for="msg">Mensagem:</label>
+        <textarea id="msg" name="usuario_msg"></textarea>
+    </div>
+	
+	<div>
+		<input type="file" name="imagem"/> 
+    </div>
+	<!--
+    <div class="button">
+        <button type="submit">Enviar sua mensagem</button>
+    </div>
+	
+	-->
+	
+	 <input type="reset" name="botao_limpar" value="Limpar"/> 
+     <input type="submit" name="botao_enviar" onclick="return validar()" value="Enviar" href="formulario.html"/>
+
+	</form>
+	</body>
+	</HTML>

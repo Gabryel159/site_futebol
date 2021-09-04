@@ -1,0 +1,92 @@
+*{margin:0px;
+padding:0px;
+	
+	
+}
+header {
+	background:url(dinheiro.jpg) ;
+	color: black;
+	height: 150px;
+	text-align: center;
+	border: 5px solid #eeeeee;
+}
+
+nav {
+	line-height: 30px;
+	background: url(dinheiro.jpg);
+	height: 690px;
+	width: 15%;
+	float: left;
+	text-align: center;
+	padding:10px;
+	border: 5px solid #eeeeee;
+}
+	
+section {
+	line-height: 30px;
+	background :url(futebol.jpg) ;
+	height: 680px;
+	width: 80%;
+	float: left;
+	text-align: center;
+	padding:5px;
+	border: 5px solid #eeeeee;
+}
+
+
+footer {
+	background: url(dinheiro.jpg) ;
+	color: black;
+	height: 150px;
+	width: 98%;
+	float: left;
+	text-align: center;
+	border: 5px solid #eeeeee;
+}
+
+#formulario{
+position:absolute;
+top:30px;
+left:20px;	 
+}
+
+#construção{
+position:absolute;
+top:0px;
+left:200px;	 
+}
+
+
+#construção2{
+position:absolute;
+top:5px;
+right:100px;	
+}
+
+
+#voltar {
+position:relative;
+top:10px;
+left:-870px;
+}
+
+
+#avançar {
+position:relative;
+top:10px;
+left:-850px;
+}
+
+
+#atualizar {
+position:relative;
+top:10px;
+left:-830px;
+}
+
+
+#cristianoronaldo gif {
+position:absolute;
+top:200px;
+left:900px;	 
+}
